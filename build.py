@@ -5,7 +5,7 @@ import json, re, shutil, html
 import yaml
 import markdown
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 OUT=ROOT/'dist'
 if OUT.exists(): shutil.rmtree(OUT)
 OUT.mkdir()
